@@ -1,0 +1,5 @@
+*.pyc
+data/v2d/ignore/*
+data/v2t/ignore/*
+utils/ignore/*
+run_*
