@@ -1,25 +1,21 @@
-#######################################################################
-# Paul-Gauthier Noé
-# Laboratoire Informatique d'Avignon (LIA), Avignon University, France
-# 2021
-#######################################################################
-
 import argparse
 import numpy as np
 import torch
 import os
 import sys
 import math
-
-sys.path.append('utils/')
-
 from torch.utils import data
 from torch import distributions as D
 from classes import Dataset, RealNVP
+sys.path.append('utils/')
 from utils import create_partition_dict, create_labels_dict, txt_2_dict
 
 
-# Here, attribute is binary
+__paper__           = "A bridge between features and evidence for attribute-driven perfect privacy"
+__code-author__     = "Paul-Gauthier Noé"
+__paper-authors__   = ["Paul-Gauthier Noé", "Andreas Nautsch", "Driss Matrouf", "Pierre-Michel Bousquet", "Jean-François Bonastre"]
+__license__         = "MIT license"
+
 
 max_epochs  = 10                # Nb epochs
 alpha       = 0.99              # Adaptation parameter for mu optimisation

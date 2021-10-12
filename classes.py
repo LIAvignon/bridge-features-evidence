@@ -1,15 +1,12 @@
-#######################################################################
-# Paul-Gauthier Noé
-# Laboratoire Informatique d'Avignon (LIA), Avignon University, France
-# 2021
-#######################################################################
-# Model classes for NFzLLR. Implementation of realNVP (see Density Estimation using Real NVP, Laurent Dinh et al.)
-#######################################################################
-
 import numpy as np
 import torch
 import torch.nn as nn
 from torch.utils import data
+
+__paper__           = "A bridge between features and evidence for attribute-driven perfect privacy"
+__code-author__     = "Paul-Gauthier Noé"
+__paper-authors__   = ["Paul-Gauthier Noé", "Andreas Nautsch", "Driss Matrouf", "Pierre-Michel Bousquet", "Jean-François Bonastre"]
+__license__         = "MIT license"
 
 
 class Dataset(data.Dataset):
